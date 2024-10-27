@@ -1,0 +1,65 @@
+import os
+import torch
+from torch.utils.data import DataLoader
+from CNN_AE_Model import DenoisingAutoencoder, NoisyImageDataset
+import torch.optim as optim
+from torchvision import transforms
+import matplotlib.pyplot as plt
+
+# Directory paths
+data_dir = "data/train/"
+output_dir = "output/"
+os.makedirs(output_dir, exist_ok=True)
+
+# Hyperparameters
+batch_size = 4
+num_epochs = 50
+learning_rate = 1e-3
+
+# Image transformations
+transform = transforms.Compose([transforms.ToTensor()])
+
+# Dataset and DataLoader
+dataset = NoisyImageDataset(data_dir, transform=transform)
+dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
+
+# Model, loss function, optimizer
+model = DenoisingAutoencoder()
+criterion = torch.nn.MSELoss()
+optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+
+# Training loop
+train_loss_history = []
+for epoch in range(num_epochs):
+    model.train()
+    running_loss = 0.0
+    for noisy_images, clean_images in dataloader:
+        noisy_images = noisy_images.float()
+        clean_images = clean_images.float()
+
+        # Forward pass
+        outputs = model(noisy_images)
+        loss = criterion(outputs, clean_images)
+
+        # Backward pass and optimization
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+
+        running_loss += loss.item() * noisy_images.size(0)
+
+    epoch_loss = running_loss / len(dataset)
+    train_loss_history.append(epoch_loss)
+    print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {epoch_loss:.4f}')
+
+# Plot the training loss
+plt.plot(range(1, num_epochs+1), train_loss_history, label='Training Loss')
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.title('Training Loss')
+plt.legend()
+plt.show()
+
+# Save the trained model
+torch.save(model.state_dict(), os.path.join(output_dir, 'autoencoder.pth'))
+print("Model saved.")
