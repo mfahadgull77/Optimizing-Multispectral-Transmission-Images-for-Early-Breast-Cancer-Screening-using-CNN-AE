@@ -2,6 +2,8 @@
 
 This project implements a Convolutional Autoencoder (CNN-AE) to denoise multispectral transmission images, which is crucial for early breast cancer screening. The model learns to reconstruct clean images from noisy multispectral images, improving image clarity for accurate analysis.
 
+## Detailed Description
+
 ## Features
 - **CNN-AE Model**: A convolutional autoencoder that denoises multispectral images.
 - **Evaluation Metrics**: Performance evaluation using PSNR, RMSE, and Pearson Correlation Coefficient.
@@ -41,7 +43,6 @@ This repository has the dataset having raw images and processed denoised images 
 
 Note: The dataset is private, and access can be obtained by contacting the author at [zhangtao@tju.edu.cn](zhangtao@tju.edu.cn).
 
-
 ### Train the Model
 To train the Convolutional Autoencoder (CNN-AE) model, run the CNN_AE_Model.py script in your Python environment. This script includes both the model architecture and the training loop.
 To start the training, run:
@@ -49,7 +50,7 @@ python CNN_AE_Model.py
 
 After training the model, you will get the evaluation performance using metrics like PSNR, RMSE, and Pearson Correlation Coefficient, and Registration Time. 
 
-### Requirements
+## Requirements
 
 The project requires Python 3.7 or later. Install dependencies from the [requirements.txt](requirements.txt).
 
@@ -62,13 +63,13 @@ torchvision for image dataset handling
 scikit-image, numpy, matplotlib for image processing and metrics
 scipy for advanced calculations
 
-### Citation
+## Citation
 If you find this project useful, please cite it as follows:
 
 Fahad, M. (2024). Optimizing Multispectral Transmission Images for Early Breast Cancer Screening using Convolutional Neural Network AutoEncoder. Zenodo. https://doi.org/10.5281/zenodo.13937695
 
 
-### Summary:
+## Summary:
 
 1. **Installation**: Provides instructions for setting up the environment, including installing dependencies.
 2. **Usage**: Explains how to prepare the dataset, train the model, and evaluate its performance.
