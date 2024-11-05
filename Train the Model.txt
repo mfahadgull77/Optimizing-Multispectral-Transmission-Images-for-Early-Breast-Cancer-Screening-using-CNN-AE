@@ -1,2 +1,0 @@
-python CNN_AE_Model.py
-For start training the model, need to run the above python script file in the python platform.
