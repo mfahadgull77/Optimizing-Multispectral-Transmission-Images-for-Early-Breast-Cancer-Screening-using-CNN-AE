@@ -40,13 +40,13 @@ Example subdirectories:
 
 ## Usage
 
-### ```Prepare the Dataset
+### Prepare the Dataset
 The dataset for this project contains multispectral images at different wavelengths. For example, images at 600nm, 620, 670nm, and 760nm wavelengths are stored in separate directories. The dataset is private, and access can be obtained by contacting the author at zhangtao@tju.edu.cn.
 /dataset/
-    -├── 600nm/
-    -├── 620nm/
-    -├── 670nm/
-    -├── 700nm/
+600nm/
+620nm/
+670nm/
+700nm/
 
 ### Train the Model
 To train the Convolutional Autoencoder (CNN-AE) model, run the CNN_AE_Model.py script in your Python environment. This script includes both the model architecture and the training loop.
