@@ -35,6 +35,10 @@ Directory for storing the dataset. This is where you should place the raw datase
 ## Usage
 ### Prepare the Dataset
 The dataset for this project contains multispectral images at different wavelengths. For example, images at 600nm, 620, 670nm, and 760nm wavelengths are stored in separate directories in the dataset directory. 
+
+After running the CNN_AE_Model.py script, the resultant denoised images will be saved in directories corresponding to their respective wavelengths. To maintain clarity and ensure proper organization, create separate directories with the same names as the input wavelength directories (e.g., 600nm, 620nm, etc.) for storing the processed output images.
+
+
 Note: The dataset is private, and access can be obtained by contacting the author at zhangtao@tju.edu.cn.
 
 
