@@ -22,20 +22,21 @@ conda activate cnn_ae_env
 pip install -r requirements.txt
 
 ### Project Structure
-/cnn-ae-multispectral-denoising
-  ├── code/
-  │    ├── CNN_AE_Model.py  # Model architecture, training loop, evaluation
-  │    ├── conv_gray_img.py  # Image preprocessing, e.g., conversion to grayscale and create the histogram plots for the images
-  │    ├── evaluate  # Evaluation script to calculate metrics (PSNR, RMSE, etc.)
-  
-  ├── data/
-  │    ├── 600nm/  # Directory for 600nm wavelength images
-  │    ├── 620nm/  # Directory for 600nm wavelength images
-  │    ├── 670nm/  # Directory for 670nm wavelength images
-  │    └── 760nm/  # Directory for 700nm wavelength images
-  ├── results/  # Folder where trained models and output images are stored
-  ├── README.md  # Project description, instructions, and setup guide
-  ├── requirements.txt  # Python dependencies
+
+The project is organized as follows:
+
+- CNN_AE_Model.py
+
+- Main file containing the Convolutional Autoencoder model architecture, training loop, and evaluation procedures.
+CNN_AE_Model.py
+- Script for training the model. It loads the dataset, initializes the model, and begins the training process and  It calculates metrics like PSNR, RMSE, Pearson Correlation Coefficient and Registration Time to assess the model's performance.
+
+Directory for storing the dataset. This is where you should place the raw dataset images.
+Example subdirectories:
+600nm/
+670nm/
+700nm/
+
 
 ### Requirements
 
