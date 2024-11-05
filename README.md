@@ -21,7 +21,7 @@ conda create -n cnn_ae_env python=3.7
 conda activate cnn_ae_env
 pip install -r requirements.txt
 
-## Project Structure
+### Project Structure
 /cnn-ae-multispectral-denoising
   ├── code/
   │    ├── CNN_AE_Model.py  # Model architecture, training loop, evaluation
