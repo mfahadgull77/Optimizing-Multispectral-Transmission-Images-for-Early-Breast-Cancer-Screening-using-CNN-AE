@@ -65,8 +65,7 @@ scipy for advanced calculations
 
 ## Citation
 If you find this project useful, please cite it as follows:
-
-Fahad, M. (2024). Optimizing Multispectral Transmission Images for Early Breast Cancer Screening using Convolutional Neural Network AutoEncoder. Zenodo. https://doi.org/10.5281/zenodo.13937695
+mfahadgull77. (2024). mfahadgull77/Optimizing-Multispectral-Transmission-Images-for-Early-Breast-Cancer-Screening-using-CNN-AE: Optimizing-Multispectral-Transmission-Images-for-Early-Breast-Cancer-Screening-using-CNN-AE (0.1). Zenodo. https://doi.org/10.5281/zenodo.14038057
 
 
 ## Summary:
