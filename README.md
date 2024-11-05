@@ -49,7 +49,6 @@ After training the model, you will get the evaluation performance using metrics 
 
 The project requires Python 3.7 or later. Install dependencies from the `requirements.txt`:
 
-```bash
 pip install -r requirements.txt
 
 Dependencies
