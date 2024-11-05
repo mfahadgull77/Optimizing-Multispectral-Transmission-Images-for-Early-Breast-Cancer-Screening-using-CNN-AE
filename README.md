@@ -32,15 +32,7 @@ CNN_AE_Model.py
 - Script for training the model. It loads the dataset, initializes the model, and begins the training process and  It calculates metrics like PSNR, RMSE, Pearson Correlation Coefficient and Registration Time to assess the model's performance.
 
 Directory for storing the dataset. This is where you should place the raw dataset images.
-Example subdirectories:
-```Datase/
---600nm/
---620nm/
---670nm/
---760nm/
-
 ## Usage
-
 ### Prepare the Dataset
 The dataset for this project contains multispectral images at different wavelengths. For example, images at 600nm, 620, 670nm, and 760nm wavelengths are stored in separate directories. The dataset is private, and access can be obtained by contacting the author at zhangtao@tju.edu.cn.
 ```/dataset/
