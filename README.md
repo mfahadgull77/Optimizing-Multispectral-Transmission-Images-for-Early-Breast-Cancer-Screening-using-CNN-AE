@@ -59,6 +59,11 @@ torchvision for image dataset handling
 scikit-image, numpy, matplotlib for image processing and metrics
 scipy for advanced calculations
 
+### Citation
+If you find this project useful, please cite it as follows:
+
+Fahad, M. (2024). Optimizing Multispectral Transmission Images for Early Breast Cancer Screening using Convolutional Neural Network AutoEncoder. Zenodo. https://doi.org/10.5281/zenodo.13937695
+
 
 ### Summary:
 
