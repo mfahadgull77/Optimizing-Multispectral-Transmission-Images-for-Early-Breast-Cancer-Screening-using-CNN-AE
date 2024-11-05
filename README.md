@@ -37,21 +37,6 @@ Example subdirectories:
 670nm/
 700nm/
 
-
-### Requirements
-
-The project requires Python 3.7 or later. Install dependencies from the `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-
-Dependencies
-Python 3.7+
-PyTorch for model building and training
-torchvision for image dataset handling
-scikit-image, numpy, matplotlib for image processing and metrics
-scipy for advanced calculations
-
 ### Usage
    -Prepare the Dataset
 The dataset for this project contains multispectral images at different wavelengths. For example, images at 600nm, 620, 670nm, and 760nm wavelengths are stored in separate directories. The dataset is private, and access can be obtained by contacting the author at zhangtao@tju.edu.cn.
@@ -67,6 +52,20 @@ To start the training, run:
 python CNN_AE_Model.py
 
 After training the model, you will get the evaluation performance using metrics like PSNR, RMSE, and Pearson Correlation Coefficient, and Registration Time. 
+
+### Requirements
+
+The project requires Python 3.7 or later. Install dependencies from the `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+
+Dependencies
+Python 3.7+
+PyTorch for model building and training
+torchvision for image dataset handling
+scikit-image, numpy, matplotlib for image processing and metrics
+scipy for advanced calculations
 
 
 ### Summary:
