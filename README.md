@@ -33,20 +33,21 @@ CNN_AE_Model.py
 
 Directory for storing the dataset. This is where you should place the raw dataset images.
 Example subdirectories:
-600nm/
-620nm/
-670nm/
-760nm/
+```Datase/
+--600nm/
+--620nm/
+--670nm/
+--760nm/
 
 ## Usage
 
 ### Prepare the Dataset
 The dataset for this project contains multispectral images at different wavelengths. For example, images at 600nm, 620, 670nm, and 760nm wavelengths are stored in separate directories. The dataset is private, and access can be obtained by contacting the author at zhangtao@tju.edu.cn.
-/dataset/
+```/dataset/
 600nm/
 620nm/
 670nm/
-700nm/
+760nm/
 
 ### Train the Model
 To train the Convolutional Autoencoder (CNN-AE) model, run the CNN_AE_Model.py script in your Python environment. This script includes both the model architecture and the training loop.
