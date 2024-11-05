@@ -37,9 +37,9 @@ Directory for storing the dataset. This is where you should place the raw datase
 The dataset for this project contains multispectral images at different wavelengths. For example, images at 600nm, 620, 670nm, and 760nm wavelengths are stored in separate directories in the dataset directory. 
 
 After running the CNN_AE_Model.py script, the resultant denoised images will be saved in directories corresponding to their respective wavelengths. To maintain clarity and ensure proper organization, create separate directories with the same names as the input wavelength directories (e.g., 600nm, 620nm, etc.) for storing the processed output images.
+This repository has the dataset having raw images and processed denoised images samples.
 
-
-Note: The dataset is private, and access can be obtained by contacting the author at zhangtao@tju.edu.cn.
+Note: The dataset is private, and access can be obtained by contacting the author at [zhangtao@tju.edu.cn](zhangtao@tju.edu.cn).
 
 
 ### Train the Model
@@ -51,8 +51,7 @@ After training the model, you will get the evaluation performance using metrics 
 
 ### Requirements
 
-The project requires Python 3.7 or later. Install dependencies from the [requirements.txt](requirements.txt)
-:
+The project requires Python 3.7 or later. Install dependencies from the [requirements.txt](requirements.txt).
 
 pip install -r requirements.txt
 
